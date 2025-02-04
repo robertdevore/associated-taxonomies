@@ -12,7 +12,7 @@
   * Plugin Name: Associated Taxonomies
   * Description: Adds a field to associate terms within the same taxonomy.
   * Plugin URI:  https://github.com/robertdevore/associated-taxonomies/
-  * Version:     1.0.0
+  * Version:     1.0.1
   * Author:      Robert DeVore
   * Author URI:  https://robertdevore.com/
   * License:     GPL-2.0+
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define the plugin version.
-define( 'ASSOCIATED_TAXONOMIES_VERSION', '1.0.0' );
+define( 'ASSOCIATED_TAXONOMIES_VERSION', '1.0.1' );
 
 // Include the Plugin Update Checker.
 require 'vendor/plugin-update-checker/plugin-update-checker.php';
