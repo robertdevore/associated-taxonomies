@@ -54,8 +54,23 @@ new WPComPluginHandler( plugin_basename( __FILE__ ), 'https://robertdevore.com/w
 
 require 'classes/Associated_Taxonomies.php';
 
-// Initialize the plugin.
+// Initialize the plugin class.
 new Associated_Taxonomies();
+
+/**
+ * Load plugin text domain for translations
+ * 
+ * @since  1.0.1
+ * @return void
+ */
+function associated_taxonomies_load_textdomain() {
+    load_plugin_textdomain( 
+        'associated-taxonomies',
+        false,
+        dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+    );
+}
+add_action( 'plugins_loaded', 'associated_taxonomies_load_textdomain' );
 
 /**
  * Shortcode to display associated terms for any taxonomy.
