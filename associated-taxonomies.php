@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Define the plugin version.
 define( 'ASSOCIATED_TAXONOMIES_VERSION', '1.0.1' );
+define( 'ASSOCIATED_TAXONOMIES_PATH', __FILE__ );
 
 // Include the Plugin Update Checker.
 require 'vendor/plugin-update-checker/plugin-update-checker.php';

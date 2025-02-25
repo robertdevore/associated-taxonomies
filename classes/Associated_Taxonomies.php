@@ -43,7 +43,7 @@ class Associated_Taxonomies {
         if ( 'term.php' === $hook || 'edit-tags.php' === $hook ) {
             wp_enqueue_script(
                 'associated-taxonomies-select2-js',
-                plugins_url( 'assets/js/select2.min.js', __FILE__ ),
+                plugins_url( 'assets/js/select2.min.js', ASSOCIATED_TAXONOMIES_PATH ),
                 [ 'jquery' ],
                 ASSOCIATED_TAXONOMIES_VERSION,
                 true
@@ -51,7 +51,7 @@ class Associated_Taxonomies {
 
             wp_enqueue_style(
                 'associated-taxonomies-select2-css',
-                plugins_url( 'assets/css/select2.min.css', __FILE__ ),
+                plugins_url( 'assets/css/select2.min.css', ASSOCIATED_TAXONOMIES_PATH ),
                 [],
                 ASSOCIATED_TAXONOMIES_VERSION
             );
@@ -76,7 +76,7 @@ class Associated_Taxonomies {
     public function enqueue_frontend_styles() {
         wp_enqueue_style(
             'associated-taxonomies-css',
-            plugins_url( 'assets/css/associated-taxonomies.css', __FILE__ ),
+            plugins_url( 'assets/css/associated-taxonomies.css', ASSOCIATED_TAXONOMIES_PATH ),
             [],
             ASSOCIATED_TAXONOMIES_VERSION
         );
